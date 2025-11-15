@@ -10,6 +10,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Icon link  -->
 
     <link rel='stylesheet'
@@ -82,7 +84,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-7">
-                    <div class="hero-info">
+                    <div class="hero-info" data-aos="fade-right" data-aos-duration="1000">
                         <h1>
                             Discreet, Professional Clearance & Cleaning Service.
                         </h1>
@@ -93,13 +95,13 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-5">
-                    <div class="hero-form">
+                    <div class="hero-form" data-aos="fade-left" data-aos-duration="1000">
                         <form action="submit">
                             <h3>Quick Contact</h3>
                             <input type="text" class="form-control" placeholder="Name">
                             <input type="email" class="form-control" placeholder="Email">
                             <input type="phone" class="form-control" placeholder="Phone">
-                            <textarea name="text" rows="3" class="form-control">Your Massage</textarea>
+                            <textarea name="text" rows="3" class="form-control" placeholder="Your Massage"></textarea>
                             <button type="submit" class="btn mb-3">Get Quote</button>
                         </form>
                     </div>
@@ -114,12 +116,12 @@
     <section class="container-fluid about-section">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-sm-12 col-md-6">
+                <div class="col-12 col-sm-12 col-md-6" data-aos="fade-right" data-aos-duration="1500">
                     <div class="about-img">
                         <img src="assets/images/images_one.jpg" alt="About us" width="90%">
                     </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-6">
+                <div class="col-12 col-sm-12 col-md-6" data-aos="fade-left" data-aos-duration="1500">
                     <div class="about-info">
                         <h3>About us</h3>
                         <p>
@@ -142,7 +144,7 @@
     <!-- Our Services Section  -->
 
     <section class="container-fluid service-section">
-        <div class="container">
+        <div class="container" data-aos="fade-down" data-aos-duration="500">
             <h3>Our Services</h3>
             <div>
                 <div class="row">
@@ -184,12 +186,12 @@
     <section class="container-fluid experts-section">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-sm-12 col-md-6">
+                <div class="col-12 col-sm-12 col-md-6" data-aos="fade-right" data-aos-duration="1500">
                     <div class="experts-img">
                         <img src="assets/images/images_six.jpg" alt="About us" width="90%">
                     </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-6">
+                <div class="col-12 col-sm-12 col-md-6" data-aos="fade-left" data-aos-duration="1500">
                     <div class="experts-info">
                         <h3>Our Expertise</h3>
                         <ul>
@@ -216,7 +218,7 @@
     <section class="container-fluid Choose-section">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-sm-12 col-md-6">
+                <div class="col-12 col-sm-12 col-md-6" data-aos="fade-right" data-aos-duration="1500">
                     <div class="choose-info">
                         <h3>Why Choose Us</h3>
                         <ul>
@@ -233,7 +235,7 @@
                         <button class="btn">Contact Us</button>
                     </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-6">
+                <div class="col-12 col-sm-12 col-md-6" data-aos="fade-left" data-aos-duration="1500">
                     <div class="choose-img">
                         <img src="assets/images/images_seven.jpg" alt="About us" width="90%">
                     </div>
@@ -245,7 +247,7 @@
     <!-- How its works Section -->
 
     <Section class="container-fluid working-section">
-        <div class="container">
+        <div class="container" data-aos="zoom-in" data-aos-duration="1500">
             <h3>How it Works</h3>
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-3">
@@ -282,7 +284,7 @@
     <!-- Testimonials Section  -->
 
     <section class="container-fluid testimonial-section">
-        <div class="container">
+        <div class="container" data-aos="zoom-out" data-aos-duration="1500">
             <h3>Testimonials</h3>
             <div class="row m-auto">
                 <div class="col-12 col-sm-12 col-md-4 m-auto card testimonial-card">
@@ -319,28 +321,93 @@
     <section class="container-fluid qus-section">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-sm-12 col-md-8">
+                <div class="col-12 col-sm-12 col-md-8" data-aos="fade-left" data-aos-duration="1500">
                     <div class="qus-list">
                         <h3>Frequently Asked Questions (FAQs)</h3>
                         <ul>
-                            <li>What areas do you provide cleaning services for?</li>
-                            <li>Are your cleaning products safe?</li>
-                            <li>Do I need to be home during the cleaning?</li>
-                            <li>How long will the cleaning take?</li>
-                            <li>Do you offer one-time or recurring services?</li>
-                            <li>Can I customize the cleaning service?</li>
-                            <li>What if I’m not satisfied with the cleaning?</li>
+                            <li class="qna-item">
+                                <div class="question">
+                                    What areas do you provide cleaning services for?
+                                    <span class="down-aero">➤</span>
+                                </div>
+                                <div class="answer">
+                                    <p>We provide cleaning services across all major metropolitan areas including [City
+                                        1], [City 2], and surrounding suburbs. Contact us to check if we serve your
+                                        specific location.</p>
+                                </div>
+                            </li>
+                            <li class="qna-item">
+                                <div class="question">
+                                    Are your cleaning products safe?
+                                    <span class="down-aero">➤</span>
+                                </div>
+                                <div class="answer">
+                                    <p>Yes, we use eco-friendly, non-toxic cleaning products that are safe for children,
+                                        pets, and the environment. All our products are certified green and
+                                        biodegradable.</p>
+                                </div>
+                            </li>
+                            <li class="qna-item">
+                                <div class="question">
+                                    Do I need to be home during the cleaning?
+                                    <span class="down-aero">➤</span>
+                                </div>
+                                <div class="answer">
+                                    <p>No, you don't need to be present. We can arrange key pickup or use lockboxes. Our
+                                        staff is fully vetted and insured for your peace of mind.</p>
+                                </div>
+                            </li>
+                            <li class="qna-item">
+                                <div class="question">
+                                    How long will the cleaning take?
+                                    <span class="down-aero">➤</span>
+                                </div>
+                                <div class="answer">
+                                    <p>Cleaning time depends on the size of your space and the package chosen.
+                                        Typically, a standard apartment takes 2-3 hours, while larger homes may take 4-6
+                                        hours.</p>
+                                </div>
+                            </li>
+                            <li class="qna-item">
+                                <div class="question">
+                                    Do you offer one-time or recurring services?
+                                    <span class="down-aero">➤</span>
+                                </div>
+                                <div class="answer">
+                                    <p>We offer both! Choose from one-time deep cleaning or regular recurring services
+                                        (weekly, bi-weekly, or monthly) with discounted rates for recurring plans.</p>
+                                </div>
+                            </li>
+                            <li class="qna-item">
+                                <div class="question">
+                                    Can I customize the cleaning service?
+                                    <span class="down-aero">➤</span>
+                                </div>
+                                <div class="answer">
+                                    <p>Absolutely! We offer customizable cleaning packages. You can add services like
+                                        interior window cleaning, oven deep cleaning, or organization services.</p>
+                                </div>
+                            </li>
+                            <li class="qna-item">
+                                <div class="question">
+                                    What if I'm not satisfied with the cleaning?
+                                    <span class="down-aero">➤</span>
+                                </div>
+                                <div class="answer">
+                                    <p>Your satisfaction is guaranteed! If you're not happy with any aspect, contact us
+                                        within 24 hours and we'll return to re-clean the area at no additional cost.</p>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-4">
                     <div class="qus-img">
-                        <img src="assets/images/qus.png" alt="A Question Mark" width="100%">
+                        <img src="assets/images/qus.png" alt="A Question Mark" width="450px">
                     </div>
                 </div>
             </div>
         </div>
-
     </section>
 
 
@@ -348,7 +415,7 @@
 
     <section class="container-fluid book-section">
         <div class="container text-center">
-            <div class="col-12 col-sm-12 col-md-6 book-content m-auto">
+            <div class="col-12 col-sm-12 col-md-6 book-content m-auto" data-aos="zoom-in-down" data-aos-duration="1500">
                 <h3>Ready to Take Your Space Back?</h3>
                 <p>It’s time to reclaim your home or office from dust, clutter, and mess. Power Clean is here to make
                     your space spotless, fresh, and inviting — so you can focus on what really matters.</p>
@@ -357,7 +424,7 @@
 
         </div>
     </section>
- 
+
 
     <!-- Footer Section  -->
 
@@ -438,6 +505,30 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const qnaItems = document.querySelectorAll('.qna-item');
+
+            qnaItems.forEach(item => {
+                const question = item.querySelector('.question');
+
+                question.addEventListener('click', function () {
+                    qnaItems.forEach(otherItem => {
+                        if (otherItem !== item && otherItem.classList.contains('active')) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    item.classList.toggle('active');
+                });
+            });
+        });
+
+
+        AOS.init();
+
+    </script>
 </body>
 
 </html>
