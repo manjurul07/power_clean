@@ -10,12 +10,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
+    <!-- Css for Page Animation -->
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Icon link  -->
 
-    <link rel='stylesheet'
-        href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-chubby/css/uicons-solid-chubby.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -351,7 +352,9 @@
             </div>
         </div>
     </section>
+
     <!-- Frequently Asked Questions (FAQs) Section  -->
+
     <section class="container-fluid qus-section">
         <div class="container">
             <div class="row">
@@ -444,7 +447,6 @@
         </div>
     </section>
 
-
     <!-- Booking  Section -->
 
     <section class="container-fluid book-section">
@@ -455,10 +457,8 @@
                     your space spotless, fresh, and inviting — so you can focus on what really matters.</p>
                 <button class="btn1">Book Now</button><button class="btn2">Call Now</button>
             </div>
-
         </div>
     </section>
-
 
     <!-- Footer Section  -->
 
@@ -480,7 +480,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-3 col-md-2">
+                <div class="col-12 col-sm-4 col-md-2">
                     <div class="foorter-quick-link">
                         <h3>Quick Links</h3>
                         <ul>
@@ -492,7 +492,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-12 col-sm-2 col-md-2">
+                <div class="col-12 col-sm-4 col-md-2">
                     <div class="foorter-service">
                         <h3>Our Services</h3>
                         <ul>
@@ -504,16 +504,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-12 col-sm-4 col-md-3">
-                    <div class="footer-contact">
-                        <h3>Contact us</h3>
-                        <p><i class="fi fi-sr-marker"></i>Chittagong , Bangladesh.</p>
-                        <p><i class="fi fi-sr-envelope"></i>manjurulhasan@gmail.com</p>
-                        <p><i class="fi fi-sr-phone-call"></i>+8801950453593</p>
-                    </div>
-
-                </div>
-                <div class="col-12 col-sm-3 col-md-2">
+                <div class="col-12 col-sm-4 col-md-2">
                     <div class="foorter-social-link">
                         <h3>Follow Us</h3>
                         <ul>
@@ -525,6 +516,16 @@
                         </ul>
                     </div>
                 </div>
+                <div class="col-12 col-sm-12 col-md-3">
+                    <div class="footer-contact">
+                        <h3>Contact us</h3>
+                        <p><i class="fi fi-sr-marker"></i>Chittagong , Bangladesh.</p>
+                        <p><i class="fi fi-sr-envelope"></i>manjurulhasan@gmail.com</p>
+                        <p><i class="fi fi-sr-phone-call"></i>+8801950453593</p>
+                    </div>
+
+                </div>
+
             </div>
             <div class="row">
                 <div class="col-12 col-sm-12 col-mid-12 copyright">
@@ -536,104 +537,20 @@
 
     </footer>
 
+    <!-- js Bootstrap LInk -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
+
+    <!-- Animation Js link -->
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <script>
+    <!-- Custom Js link -->
 
-        // QNA 
+    <script src="assets/js/script.js"></script>
 
-        document.addEventListener('DOMContentLoaded', function () {
-            const qnaItems = document.querySelectorAll('.qna-item');
-
-            qnaItems.forEach(item => {
-                const question = item.querySelector('.question');
-
-                question.addEventListener('click', function () {
-                    qnaItems.forEach(otherItem => {
-                        if (otherItem !== item && otherItem.classList.contains('active')) {
-                            otherItem.classList.remove('active');
-                        }
-                    });
-                    item.classList.toggle('active');
-                });
-            });
-        });
-
-        // Animation for page
-
-        AOS.init();
-
-
-        // js for slider
-
-        document.addEventListener('DOMContentLoaded', function () {
-            const track = document.querySelector('.testimonial-track');
-            const cards = document.querySelectorAll('.testimonial-card');
-            const dotsContainer = document.querySelector('.slider-nav');
-            const prevArrow = document.querySelector('.prev-arrow');
-            const nextArrow = document.querySelector('.next-arrow');
-
-            let currentIndex = 0;
-
-            cards.forEach((_, index) => {
-                const dot = document.createElement('div');
-                dot.classList.add('slider-dot');
-                if (index === currentIndex) dot.classList.add('active');
-                dot.addEventListener('click', () => goToSlide(index));
-                dotsContainer.appendChild(dot);
-            });
-
-            const dots = document.querySelectorAll('.slider-dot');
-
-            function updateSlider() {
-                const cardWidth = cards[0].offsetWidth + 20;
-                track.style.transform = `translateX(${-currentIndex * cardWidth}px)`;
-
-                cards.forEach((card, index) => {
-                    card.classList.toggle('testimonial-card-active', index === currentIndex);
-                });
-
-                dots.forEach((dot, index) => {
-                    dot.classList.toggle('active', index === currentIndex);
-                });
-            }
-
-            function goToSlide(index) {
-                currentIndex = index;
-                updateSlider();
-            }
-
-            function nextSlide() {
-                if (currentIndex < cards.length - 1) {
-                    currentIndex++;
-                } else {
-                    currentIndex = 0;
-                }
-                updateSlider();
-            }
-
-            function prevSlide() {
-                if (currentIndex > 0) {
-                    currentIndex--;
-                } else {
-                    currentIndex = cards.length - 1;
-                }
-                updateSlider();
-            }
-
-            setInterval(nextSlide, 5000);
-
-            updateSlider();
-
-            window.addEventListener('resize', function () {
-                updateSlider();
-            });
-        });
-
-    </script>
 </body>
 
 </html>

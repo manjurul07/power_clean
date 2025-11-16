@@ -1,11 +1,21 @@
+/* Google fonts link  */
+
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Oxanium", sans-serif;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
 }
 
 /* Header section -------------------------------------- */
@@ -431,6 +441,7 @@
     background-color: #BBDCE5;
     padding: 30px 0px;
 }
+
 .btn1 {
     background-color: #34656D;
     color: #fff;
@@ -438,18 +449,21 @@
     border: none;
     margin-right: 20px;
 }
+
 .btn1:hover {
     border: 1px solid #34656D;
     background-color: transparent;
     padding: 7px 20px;
     color: #34656D;
 }
+
 .btn2 {
     padding: 7px 20px;
     background-color: transparent;
     border: 1px solid #34656D;
     color: #34656D;
 }
+
 .btn2:hover {
     background-color: #34656D;
     color: #fff;
@@ -458,6 +472,10 @@
 }
 
 /* Question Section -------------------------------------- */
+.qus-img {
+    margin-top: 70px;
+    margin-left: 20px;
+}
 
 .qus-section h3 {
     font-size: 32px;
@@ -534,6 +552,7 @@
     transition: opacity 0.3s ease 0.1s, transform 0.3s ease 0.1s;
     font-size: 15px;
 }
+
 .qna-item.active {
     border-color: #34656D;
     box-shadow: 0 5px 20px rgba(52, 101, 109, 0.15);
@@ -553,11 +572,13 @@
     opacity: 1;
     transform: translateY(0);
 }
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
         transform: translateY(10px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -568,13 +589,33 @@
     animation: fadeInUp 0.5s ease forwards;
 }
 
-.qna-item:nth-child(1) { animation-delay: 0.1s; }
-.qna-item:nth-child(2) { animation-delay: 0.2s; }
-.qna-item:nth-child(3) { animation-delay: 0.3s; }
-.qna-item:nth-child(4) { animation-delay: 0.4s; }
-.qna-item:nth-child(5) { animation-delay: 0.5s; }
-.qna-item:nth-child(6) { animation-delay: 0.6s; }
-.qna-item:nth-child(7) { animation-delay: 0.7s; }
+.qna-item:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.qna-item:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.qna-item:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.qna-item:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.qna-item:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.qna-item:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+.qna-item:nth-child(7) {
+    animation-delay: 0.7s;
+}
 
 
 /* Footer section ----------------------------------- */
@@ -634,6 +675,73 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+    .header-section {
+        text-align: center;
+    }
+
+    .hero-section {
+        background-image: url(../images/images_main-mbl.jpg);
+        background-position: top center;
+        background-size: cover;
+        position: relative;
+    }
+
+    .hero-info {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-section h1 {
+        font-size: 36px;
+    }
+
+    .hero-section p {
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .hero-section button {
+        margin-bottom: 30px;
+    }
+
+    .about-img img,
+    .experts-img img,
+    .choose-img img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .experts-info {
+        width: 100%;
+        margin-left: 30px;
+    }
+
+    .choose-info {
+        width: 100%;
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
+
+    .working-card {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .service-card {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .qus-img img {
+        display: none;
+    }
+
+    .book-section {
+        text-align: justify;
+    }
+
     .testimonial-card {
         padding: 20px;
         min-height: 250px;
@@ -661,41 +769,107 @@
         margin-right: -60px;
     }
 
-    
+
     .qus-section h3 {
         font-size: 26px;
         margin-bottom: 30px;
     }
-    
+
     .qus-list {
         padding: 25px 20px;
         margin-bottom: 30px;
     }
-    
+
     .question {
         padding: 18px 20px;
         font-size: 15px;
     }
-    
+
     .answer p {
         padding: 0 20px;
         font-size: 14px;
     }
-    
+
     .qna-item.active .answer {
         padding: 15px 0;
     }
-    
-    .qus-img {
-        padding: 10px;
-    }
-    
-    .qus-img img {
-        max-width: 300px;
+
+    .footer-content {
+        margin-left: 8px;
+        margin-bottom: 12px;
+        margin: auto;
+        text-align: center;
     }
 }
 
 @media (max-width: 576px) {
+    .header-section {
+        text-align: center;
+    }
+
+    .hero-section {
+        background-image: url(../images/images_main-mbl.jpg);
+        background-position: top center;
+        background-size: cover;
+        position: relative;
+    }
+
+    .hero-info {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-section h1 {
+        font-size: 36px;
+    }
+
+    .hero-section p {
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .hero-section button {
+        margin-bottom: 30px;
+    }
+
+    .about-img img,
+    .experts-img img,
+    .choose-img img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .experts-info {
+        width: 100%;
+        margin-left: 30px;
+    }
+
+    .choose-info {
+        width: 100%;
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
+
+    .working-card {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .service-card {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .qus-img img {
+        display: none;
+    }
+
+    .book-section {
+        text-align: justify;
+    }
+
     .slider-arrows {
         position: static;
         transform: none;
@@ -709,32 +883,30 @@
         margin: 0;
         position: static;
     }
-    
+
     .qus-section h3 {
         font-size: 22px;
         margin-bottom: 25px;
     }
-    
-    .qus-list {
-        padding: 20px 15px;
-    }
-    
+
     .question {
         padding: 15px;
         font-size: 14px;
     }
-    
+
     .answer p {
         padding: 0 15px;
         font-size: 13px;
     }
-    
+
     .down-aero {
         font-size: 14px;
         margin-left: 10px;
     }
-    
-    .qus-img img {
-        max-width: 250px;
+
+    .footer-content {
+        margin-left: 8px;
+        margin-bottom: 12px;
+        text-align: left;
     }
 }
